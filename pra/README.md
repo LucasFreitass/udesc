@@ -5,3 +5,7 @@ Disciplina feita no semestre 2019/02
 - Trabalho final
 - Exercicios
 - Materiais de apoio 
+
+### Linguagens usadas:
+- C / C++
+- R
