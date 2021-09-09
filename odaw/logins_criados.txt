@@ -1,0 +1,7 @@
+arquivo com os logins criados: 
+
+    Usuário: Lucas, Senha: Senha
+
+    Usuário: Joao, Senha: 1234
+
+    Usuário: Marcos, Senha: asdf
