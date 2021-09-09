@@ -1,0 +1,72 @@
+* Grafo direcionado e valorado, as informações como saida e chegada, custo e reservas
+vao ser salvar em uma struct, que ẽ atribuida a cada vertice do grafo. Coloco tbm o numero 
+voo, junto com os valores da struct
+
+
+No sao as cidades
+
+- ELES SAEM DE SAO PAULO. 
+- DESTINO EM NATAL. 
+
+- PEGAR O HORARIO DE CHEGADA, FAZER +60 POR CAUSA DAS RESTRICOES, E DAI EU VEJO OQ AINDA DA DE
+EU PEGAR ..
+
+- CONTAR QUANTOS PULOS DEU, SE FOR > 5 ACHAR OUTRO CAMINHO. 
+
+- ACHAR O CAMINHO COM CUSTO MINIMO. 
+
+
+- EU VEJO QUAL O MELHOR VOO, TEM 30 DISPONIVEL, EU MANDO AS 30 PESSOAS NESSE VOO, RELAXO ESSA
+ARESTA, VEJO QUANTAS PESSOAS AINDA FALTA, RODO DENOVO O KRUSKAL, VEJO QUAL O PROX CAMINHO
+E ASSIM POR DIANTE. 
+
+FACO UM ALGORITMO PARA VALIDAR AS SAIDAS DO KRUSKAL ( FAZER O KRUSKAL GENERICO, PARA IR RODANDO
+E DEPOIS EU CHAMO OUTRA CLASSE E PARA VALIDAR MINHAS LIMITACOES, OU SEJA, SE DER MAIS Q 5 PULOS
+OU MENOS DE 1H DE DIFERENCA, EU JA RELAXO ESSA ARESTA, POIS ELA JA N VAI MAIS SER UTIL.
+
+
+
+MONTAR ASSIM PARA FACILITAR 
+
+Em vez de vagas reservadas, eu coloco os acentos DISPONIVEL ( 200 - RESERVA ) 
+
+Struct - numer de voo, tempo, chegada, preco, assento disponivel ] - isso pq no codigo eu so
+vejo quando chega a zero e relaxo a aresta, mais facil doq ir somando. 
+
+
+
+
+http://viz-js.com/
+
+
+# http://www.graphviz.org/content/cluster
+
+digraph G {
+
+
+	SP -> GOIANIA [label="501;8:00;10:00;R$120;120"];
+    GOIANIA -> SALVADOR[label="501;11:00;13:40;120;70"];
+    SALVADOR -> RECIFE[label="501;15:50;17:00;100;80"];
+    RECIFE -> NATAL[label="501;18:00;18:45;80;100"];
+    SP -> BRASILIA[label="513;9:00;10:50;50;180"];
+    BRASILIA -> FORTALEZA[label="513;11:45;15:00;180;20"];
+    FORTALEZA -> RECIFE[label="513;15:50;16:20;100;25"];
+    CURITIBA -> MANAUS[label="581;6:50;10:20;320;180"];
+    MANAUS -> BELEM[label="581;10:50;12:00;100;20"];
+    BELEM -> FORTALEZA[label="581;12:50;14:20;100;35"];
+    RJ -> SP[label="587;6:00;7:50;80;160"];
+    SP -> MACEIO[label="587;8:30;11:00;180;100"];
+    MACEIO -> RECIFE[label="587;12:00;13:00;80;120"];
+    RECIFE -> NATAL[label="587;15:00;15:45;80;10"];
+    POA -> CURITIBA[label="590;6:00;7:30;100;100"];
+    CURITIBA -> BRASILIA[label="590;10:00;11:45;150;140"];
+    BRASILIA -> RECIFE[label="590;14:00;16:30;150;120"];
+    BRASILIA -> MACEIO[label="592;12:00;14:30;100;180"];
+    RJ -> BRASILIA[label="593;9:00;9:45;100;110"];
+    RJ -> VITORIA[label="594;5:00;6:00;100;130"];
+    VITORIA -> SALVADOR[label="594;8:30;9:45;80;20"];
+    SALVADOR -> MACEIO[label="594;10:45;11:45;80;100"];
+    MACEIO -> NATAL[label="594;16:45;18:00;100;50"];
+    RECIFE -> NATAL[label="595;17:30;18:15;50;120"];
+    
+}
