@@ -1,0 +1,32 @@
+
+
+PRIMEIRO :
+
+* Ir na função adiciona, e ir atribuindo a variavel "complex
+" a cada atribuição, iteração e etc que ocorre na funcao.
+
+* Fazer o mesmo para a função de balanceamento.
+
+SEGUNDO :
+
+* Preparar 2 arquivos de testes, com o pior e melhor caso (cerca de 30 amostras)
+
+* Criar um modo de adicionar aleatoriamente para fazer o teste do caso médio
+
+
+TERCEIRO :
+
+* Gerar apenas um arquivo(.csv) com todas as saidas, vai ter 6 linhas o gráfico
+melhor, médio e pior caso para a função adicionar
+melhor, médio e pior caso para a funcao balancear
+
+isso vai ter que sair tudo em 1 arquivo, para poder jogar no R e gerar o gráfico.
+
+
+a cada teste que eu rodar vai servir para as 2 funções ja, no caso:
+
+teste melhor caso:
+
+vou ter 30 analises da adiciona e 30 da balanceamento
+
+teste caso médio .. e assim por diante!
