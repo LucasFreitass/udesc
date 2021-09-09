@@ -11,7 +11,6 @@ Todos os codigos foram desenvolvidos em dupla e meu companheiro foi o Yuri Andre
   - FLEURY
   - Lista De Adjacência
   - Matriz de Adjacência e Incidencia
- - Testes para garantia dos códigos
 
 ### Linguagem usada: 
 - C++
